@@ -8,19 +8,6 @@ h1 {
   line-height: 26,7px;
   font-weight: 900;
 }
-a {
-  background-color: #F6F9FC;
-  font-family: 'Roboto', sans-serif;
-  color: #6B72E1;
-  font-size: 16px;
-  line-height: 13,3px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  color:black;
-}
 
 h2 {
   background-color: #F6F9FC;
@@ -38,11 +25,26 @@ body {
   line-height: 14,2px;
 }
 
+a {
+  background-color: #F6F9FC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 13,3px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color:white;
+  background-color: black;
+}
+
 img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 6px 6px 6px black
 }
 
 .container {
@@ -70,6 +72,7 @@ img {
 }
 
 .list-inline li {
+
   font-size: 50px;
   color: rgb(230, 230, 230);
   display: inline-block;
@@ -77,12 +80,18 @@ img {
 }
 
 .button {
+  margin: 2em 0;
+  display: inline-block;
   background-color: #6B72E1;
   color: white;
-  padding: 15px 20px;
+  padding: 15px 40px;
   border-radius: 4px;
+  transition: 1s;
 }
 
+.fa-2xl {
+  font-size: 3em;
+}
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
